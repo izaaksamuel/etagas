@@ -1,6 +1,6 @@
 /**
  * Service Worker
- * @author SamuelGadelha
+ * @author SENAC
  */
 
 //Instalação do Service Worker
@@ -11,7 +11,7 @@ self.addEventListener('install', (event)=> {
         caches.open('static')
         .then((cache)=> {
             console.log("Pré carregamento dos arquivos do app")
-            cache.add('/etagas')
+            cache.add('/etagas/')
             cache.add('/etagas/index.html')
             cache.add('/etagas/style.css')
             cache.add('/etagas/app.js')
